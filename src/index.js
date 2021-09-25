@@ -150,19 +150,13 @@ ReactDOM.render(
     {detail}
 </Row>
 <hr />
-<h4 className="font-weight-800 text-center">Desktops and Window Mangers Offered</h4>
+          <h3 style={{fontSize: "20px"}} class="font-weight-bold">Cnchi - The best installer</h3>
 
-<Row>
-    {de}
-</Row>
 
 
 
        </div>
-  <div className="align-items-center" style={{height: "50px", width: "100%", backgroundColor: "black", textAlign: "center", display: "flex", justifyContent: "center"}}>
-
-Made with love by Felis
-</div>
+ 
 
         </>
   ,
