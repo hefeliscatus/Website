@@ -33,31 +33,30 @@ const details = [
     title: "Pick from 13 desktops",
     image: "cil:screen-desktop",
     subtitle:
-      "The one to rule them all. Whether you are a fan of KDE, GNOME, Deepin, Budgie, Cinnamon, MATE, OpenBox, i3, Xfce, Enlightenment, or LXQT or no desktop at all.",
+      "The one to rule them all. Whether you are a fan of KDE, GNOME, Deepin, i3, Xfce, Enlightenment, or LXQT or no desktop at all.",
   },
   {
     id: 2,
     title: "Tons of optional features",
-    readmore: "true",
-    image: "ant-design:code-sandbox-square",
+    image: "cil:star",
     subtitle:
       "Whether you need maximum performance with TLP & Thermald or office suites and browser choices we got you covered.",
   },
   {
     id: 3,
     title: "Friendly community",
-    readmore: "true",
     image: "fluent:people-20-regular",
+    readmore: 'false',
     subtitle:
-      "Engage with us and our social channels! We are helpful and are nice to speak with",
+      "Engage with us and our social channels! We are helpful and are nice to speak with and are a great community",
   },
   {
     id: 4,
     title: "Rolling releases",
-    readmore: "true",
     image: "iconoir:linux",
+    readmore: 'false',
     subtitle:
-      "RebornOS is a rolling release distribution based on Arch, always updated never behind!",
+      "RebornOS is a rolling release distribution based on Arch, always updated never behind! Always stay updated ",
   },
 ];
 const des = [
@@ -77,30 +76,31 @@ const des = [
   { name: "Cutefish", logo: "unsplash.it" },
   { name: "Regolith", logo: "unsplash.it" },
 ];
+
 const detail = details.map((d) => (
   <div className="col-lg mt-4 ">
     <div class="col-auto-fluid mb-3">
       <div>
-        <div>
+        <div style={{  borderRadius: "20px"}} className="p-2 pl-3 pr-3">
           <span
-            style={{ width: "50px", height: "50px " }}
+            style={{ width: "50px", height: "50px ", color: "#7b69c8" }}
             class="iconify mb-4"
             data-icon={d.image}
           ></span>
 
-          <h4 style={{ fontSize: "20px" }} class="font-weight-600 mb-4">
+          <h4 style={{ fontSize: "20px" , color: "#7b69c8"}} class="font-weight-800 mb-4">
             {d.title}
           </h4>
 
           <h5
             style={{ fontSize: "17px" }}
-            class="card-subtitle mb-4 text-muted font-weight-400  "
+            class="card-subtitle  text-muted font-weight-400  "
           >
             {d.subtitle}
           </h5>
           <div class="flex flex-direction-row">
             {d.readmore == "true" && (
-              <a href="#" class="card-link">
+              <a href="#" class="color-blue">
                 Read More
               </a>
             )}
@@ -140,12 +140,14 @@ ReactDOM.render(
     <div className="position-relative">
       <section
         style={{
+          background: "url(https://linuxmint.com/web/wizixo/template/assets/images/bg/pattern/02.png)",
           background: "#4568DC",
           background: "-webkit-linear-gradient(to right, #B06AB3, #4568DC)",
-          background: "linear-gradient(to right, #B06AB3, #4568DC)",
+          background: "linear-gradient(to right, #B06AB3, #4568DC), url(https://linuxmint.com/web/wizixo/template/assets/images/bg/pattern/02.png)",
         }}
         className="section section-hero section-shaped"
       >
+
         <div className="shape shape-style-1 shape-default"></div>
         <Container className="shape-container d-flex align-items-center ">
           <div className="col ">
@@ -173,12 +175,22 @@ ReactDOM.render(
       </section>
     </div>
     <div className="container-fluid p-lg-6 p-sm-3">
+      
       <Row>{detail}</Row>
-      <hr />
-      <h3 style={{ fontSize: "20px" }} class="font-weight-bold">
-        Cnchi - The best installer
-      </h3>
+      
+      
     </div>
+    <div className="p-4 ml-5">
+    <h2 className="mb-3 font-weight-800">The most advanced installer ever!</h2>
+<h4 className="ml-1 mb-4">With RebornOS you decide what's installed.</h4>
+<ul style={{color: "#7b69c8" }}>
+<li><h5>Pick from 13 desktops & window managers</h5></li>
+<li><h5>More than 30 optional features</h5></li>
+<li><h5>Worldwide mirrors</h5></li>
+<li><h5>Made for you, made with you</h5></li>
+   </ul>
+</div>
+
   </>,
   document.getElementById("root")
 );

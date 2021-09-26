@@ -9,6 +9,20 @@
     padding-bottom: $spacer * 8;
 }
 
+
+
+.bg-grad {
+    background: -moz-linear-gradient(150deg, #69B53F 0%, #2ab9a5 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #69B53F), color-stop(100%, #2ab9a5));
+    background: -webkit-linear-gradient(
+150deg, #69B53F 0%, #2ab9a5 100%);
+    background: -o-linear-gradient(150deg, #69B53F 0%, #2ab9a5 100%);
+    background: -ms-linear-gradient(150deg, #69B53F 0%, #2ab9a5 100%);
+    background: linear-gradient(
+150deg, #69B53F 0%, #2ab9a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
+}
+
 .section-lg {
     padding-top: $spacer * 6;
     padding-bottom: $spacer * 6;

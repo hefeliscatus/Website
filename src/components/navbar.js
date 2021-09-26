@@ -63,8 +63,8 @@ Reborn OS            </NavbarBrand>
               </div>
               <Nav className="ml-lg-auto" navbar>
                 <NavItem>
-                  <NavLink href="/download" onClick={e => e.preventDefault()}>
-                    Download <span className="sr-only font-weight-600">(current)</span>
+                  <NavLink href="/download" className="font-weight-600" onClick={e => e.preventDefault()}>
+                    Download <span className="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
