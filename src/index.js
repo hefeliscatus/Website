@@ -180,7 +180,7 @@ ReactDOM.render(
       
       
     </div>
-    <div className="p-4 ml-5">
+    <div className="ml-lg-4 p-4">
     <h2 className="mb-3 font-weight-800">The most advanced installer ever!</h2>
 <h4 className="ml-1 mb-4">With RebornOS you decide what's installed.</h4>
 <ul style={{color: "#7b69c8" }}>
