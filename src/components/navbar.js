@@ -20,8 +20,8 @@ class Navbars extends React.Component {
     return (
       <>
         <Navbar
-          className="navbar-horizontal navbar-light bg-white sticky-top"
-          expand="sm"
+          className="navbar-horizontal navbar-light bg-white sticky-top navbar-expand-lg"
+          expand="lg"
         >
           <div className="container-fluid">
             <NavbarBrand href="/" onClick={e => e.preventDefault()}>
@@ -64,11 +64,11 @@ Reborn OS            </NavbarBrand>
               <Nav className="ml-lg-auto" navbar>
                 <NavItem>
                   <NavLink href="/download" onClick={e => e.preventDefault()}>
-                    Download <span className="sr-only">(current)</span>
+                    Download <span className="sr-only font-weight-600">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/blog" onClick={e => e.preventDefault()}>
+                  <NavLink href="/blog" className="font-weight-600" onClick={e => e.preventDefault()}>
 Announcements
                   </NavLink>
                 </NavItem>
@@ -81,6 +81,7 @@ Announcements
                     id="navbar-primary_dropdown_1"
                     onClick={e => e.preventDefault()}
                     role="button"
+                    className="font-weight-600"
                   >
                     Our Team
                   </NavLink>
